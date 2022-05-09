@@ -1,0 +1,24 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: #000000;    
+}
+
+.heading{
+    font-size: 4em;
+    font-weight: bold;
+    color: #8E05C2;
+    text-align: center;
+}
+
+.button {
+    background-color: #3E065F;
+    box-shadow: 0 5px 0 #700B97;  
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
