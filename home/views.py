@@ -1,13 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from matplotlib.style import context
 from .forms import *
 from home.imgcut import imgcut
 from home.imgcut2 import imgcut2
 from home.imgcut3 import imgcut3
 import os
 from .models import img,img2,img3
-from home.model import mlmodel
 
 # Create your views here.
 
@@ -80,18 +78,3 @@ def testing(request):
     else:
         form = TrainingForm3()
     return render(request, 'testing.html', {'form' : form})
-
-def result(request):
-    finalresult=mlmodel()
-    if(finalresult== "User1"):
-        field_name = 'name'
-        obj = img.objects.first()
-        name1 = getattr(obj, field_name)
-        finalresult=name1
-    elif(finalresult=="User2"):
-        field_name = 'name'
-        obj = img2.objects.first()
-        name2 = getattr(obj, field_name)
-        finalresult=name2
-
-    return render(request,'result.html',{'result': finalresult})
