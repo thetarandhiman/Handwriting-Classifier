@@ -3,7 +3,7 @@ html,body{
 }
 
 body{
-    background-color: #000000;    
+    background-color: white;   
 }
 
 .heading{
@@ -29,4 +29,8 @@ body{
     width: 40rem;
     height: 20rem;
     margin: 0 auto;
+}
+
+.form{
+    background-color:#ababab;
 }

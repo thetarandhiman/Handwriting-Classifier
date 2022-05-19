@@ -1,6 +1,6 @@
-{% comment %} var loadFile = function(event) {
-    var image = document.getElementById('output');
-    image.src = URL.createObjectURL(event.target.files[0]);
-}; {% endcomment %}
+// var loadFile = function(event) {
+//     var image = document.getElementById('output');
+//     image.src = URL.createObjectURL(event.target.files[0]);
+// }; 
 
 // display trained model notification

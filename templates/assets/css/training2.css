@@ -6,6 +6,13 @@ body{
     background-color: white;    
 }
 
+.heading{
+    font-size: 4em;
+    font-weight: bold;
+    color: #8E05C2;
+    text-align: center;
+}
+
 .button {
     background-color: #3E065F;
     box-shadow: 0 5px 0 #700B97;  
@@ -14,4 +21,16 @@ body{
     position: relative;
     text-decoration: none;
     display: inline-block;
+}
+
+.img-output{
+    border: #3E065F;
+    border-style: solid;
+    width: 40rem;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.form{
+    background-color:#ababab;
 }

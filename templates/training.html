@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/training.css">
+    
+    <link rel="stylesheet" type="text/css" href="/templates/assets/css/training.css">
 
     <title>Training</title>
 </head>
@@ -16,15 +16,17 @@
         <p>User 1</p>
     </div>
     <form method = "post" enctype="multipart/form-data">
+        <div class="form">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Upload</button>
+        </div>
     </form>
     {% if img_obj %}  
         <h3>Succesfully uploaded</h3>
-        {% comment %} <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">   {% endcomment %}
+        <!-- <img src="{{img_obj.image.url}}" alt="connect" style="max-height:300px">   -->
     {% endif %}
-    {% comment %} <div class="image-upload">
+    <!-- {<div class="image-upload">
         <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
         <div>
             <p><label for="file" style="cursor: pointer;" class="button">Upload Image</label></p>
@@ -35,7 +37,7 @@
             <script src="assets/js/training.js"></script>
         </div>
 
-    </div> {% endcomment %}
+    </div> -->
     <div>
         <a href="/training2" class="button">Upload details for User 2</a>
     </div>
