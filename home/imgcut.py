@@ -37,7 +37,7 @@ def imgcut():
     # #             counter+=1
     
     for imgs in patches:
-        count = 322
+        count = 0
         for r in range(1,math.floor(length/113)):
             for c in range(1,math.floor(new_width/113)):
                 img = tf.reshape(imgs[r,c],shape=(113,113)).numpy().astype("uint8")
